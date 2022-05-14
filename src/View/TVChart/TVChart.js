@@ -72,51 +72,44 @@ export default function TVChart() {
 		[chart]
 	);
 
-	//drawing lines - liquidation, entry / update on data change
+	// drawing lines on chart mount/change
 
 	useEffect(
 		() => {
-			if (series && liqPrice) {
-				// series.removePriceLine(liqPriceLine);
-				if (!liqPriceLine) {
-					setLiqPriceLine(
-						series.createPriceLine({
-							price: liqPrice,
-							...liqLineOptions
-						})
-					);
-				} else {
-					// series.removePriceLine(liqPriceLine);
-					// setLiqPriceLine(
-					// 	series.createPriceLine({
-					// 		price: liqPrice,
-					// 		...liqLineOptions
-					// 	})
-					// );
+			if (series) {
+				setLiqPriceLine(
+					series.createPriceLine({
+						price: liqPrice,
+						...liqLineOptions
+					})
+				);
+				setEntryPriceLine(
+					series.createPriceLine({
+						price: entryPrice,
+						...entryPLineOptions
+					})
+				);
+			}
+		},
+		[series]
+	);
+
+	// updating lines on data change
+
+	useEffect(
+		() => {
+			if (series) {
+				if (liqPriceLine) {
 					liqPriceLine.applyOptions({ price: liqPrice });
 				}
-				if (!entryPriceLine) {
-					setEntryPriceLine(
-						series.createPriceLine({
-							price: entryPrice,
-							...entryPLineOptions
-						})
-					);
-				} else {
-					// series.removePriceLine(entryPriceLine);
-					// setEntryPriceLine(
-					// 	series.createPriceLine({
-					// 		price: entryPrice,
-					// 		...entryPLineOptions
-					// 	})
-					// );
+				if (entryPriceLine) {
 					entryPriceLine.applyOptions({
 						price: entryPrice
 					});
 				}
 			}
 		},
-		[liqPrice, entryPrice, series]
+		[liqPrice, entryPrice]
 	);
 
 	// updating last candle - realtime chart
