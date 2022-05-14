@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/binanceCalculator/static/css/main.2026d64c.css",
-    "main.js": "/binanceCalculator/static/js/main.45f6e1ff.js",
+    "main.js": "/binanceCalculator/static/js/main.c847a3d4.js",
     "index.html": "/binanceCalculator/index.html",
     "main.2026d64c.css.map": "/binanceCalculator/static/css/main.2026d64c.css.map",
-    "main.45f6e1ff.js.map": "/binanceCalculator/static/js/main.45f6e1ff.js.map"
+    "main.c847a3d4.js.map": "/binanceCalculator/static/js/main.c847a3d4.js.map"
   },
   "entrypoints": [
     "static/css/main.2026d64c.css",
-    "static/js/main.45f6e1ff.js"
+    "static/js/main.c847a3d4.js"
   ]
 }
