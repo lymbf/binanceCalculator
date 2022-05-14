@@ -1,10 +1,5 @@
 import './TVChart.css';
-import {
-	CrosshairMode,
-	createChart,
-	ColorType,
-	LineStyle
-} from 'lightweight-charts';
+import { createChart } from 'lightweight-charts';
 import React, { useEffect, useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
 import useChartCtrl from './Controller/chartController';
@@ -91,13 +86,14 @@ export default function TVChart() {
 						})
 					);
 				} else {
-					series.removePriceLine(liqPriceLine);
-					setLiqPriceLine(
-						series.createPriceLine({
-							price: liqPrice,
-							...liqLineOptions
-						})
-					);
+					// series.removePriceLine(liqPriceLine);
+					// setLiqPriceLine(
+					// 	series.createPriceLine({
+					// 		price: liqPrice,
+					// 		...liqLineOptions
+					// 	})
+					// );
+					liqPriceLine.applyOptions({ price: liqPrice });
 				}
 				if (!entryPriceLine) {
 					setEntryPriceLine(
@@ -107,13 +103,16 @@ export default function TVChart() {
 						})
 					);
 				} else {
-					series.removePriceLine(entryPriceLine);
-					setEntryPriceLine(
-						series.createPriceLine({
-							price: entryPrice,
-							...entryPLineOptions
-						})
-					);
+					// series.removePriceLine(entryPriceLine);
+					// setEntryPriceLine(
+					// 	series.createPriceLine({
+					// 		price: entryPrice,
+					// 		...entryPLineOptions
+					// 	})
+					// );
+					entryPriceLine.applyOptions({
+						price: entryPrice
+					});
 				}
 			}
 		},
