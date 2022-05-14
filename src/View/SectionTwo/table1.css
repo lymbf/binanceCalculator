@@ -1,0 +1,50 @@
+.s2-table-one {
+	display: flex;
+	flex-direction: column;
+	padding: 0.3rem 0.5rem;
+}
+
+.s2-table-one > div {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.s2-table-one > div:first-child {
+	margin-bottom: 1rem;
+}
+
+.s2-table-one > div > div:first-child {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	height: 30px;
+	margin-bottom: 0.2rem;
+}
+
+.s2-table-one > div > div:last-child > div > div:last-child {
+	color: rgb(255, 99, 132);
+}
+
+.s2-table-one > div > div:first-child > div:first-child {
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+.s2-table-one select {
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+}
+
+.s2-table-one .output {
+	font-size: 2rem;
+}
+
+.s2-table-one > div:last-child > div:first-child {
+	font-size: 1.2rem;
+	font-weight: 700;
+	text-transform: capitalize;
+}

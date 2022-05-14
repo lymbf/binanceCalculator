@@ -1,0 +1,26 @@
+.leverage {
+	font-size: 1.5rem;
+}
+
+.leverage > .input > label {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.leverage > .input > label > div {
+	display: flex;
+	flex-direction: row;
+	padding: 0.2rem;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.leverage .value {
+	color: rgb(125, 174, 248);
+	font-weight: 900;
+}
+
+.leverage input {
+	width: 70%;
+}

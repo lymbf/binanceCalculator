@@ -1,0 +1,15 @@
+.input {
+	color: white;
+	font-family: 'Roboto';
+	font-weight: 700;
+}
+
+.input > label > div:first-child {
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+.input input {
+	background-color: rgb(6, 11, 17);
+	border-radius: 5px;
+}

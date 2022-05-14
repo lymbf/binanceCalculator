@@ -1,0 +1,20 @@
+.chart {
+	border-radius: 15px;
+	overflow: hidden;
+	color: rgb(17, 27, 41);
+	width: 600px;
+	height: 550px;
+	background-color: rgba(4, 52, 94, 0.534);
+	padding: 10px;
+}
+
+.yolo {
+	color: rgb(136, 237, 255);
+	color: rgba(160, 160, 160, 0.452);
+	color: rgb(3, 36, 49);
+	color: rgba(13, 143, 194, 0.877);
+	color: rgb(1, 15, 20);
+	color: rgb(128, 255, 255);
+	color: rgb(71, 28, 28);
+	color: rgb(124, 77, 77);
+}

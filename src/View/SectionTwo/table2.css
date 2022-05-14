@@ -1,0 +1,97 @@
+.s2-table-two {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0.5rem 0.3rem;
+}
+
+.s2-table-two > div {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.s2-table-two > div > div {
+	width: 50%;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: center;
+}
+
+.s2-table-two > div > div > div:last-child {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-size: 0.8rem;
+	padding: 0.3rem 0rem;
+}
+
+.s2-table-two 
+h2 {
+	padding: 0;
+	margin: 0;
+	color: white;
+	font-weight: 700;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+}
+
+.stop-loss-container {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	margin-top: 1rem;
+}
+.stop-loss-container select {
+	background-color: black;
+	color: white;
+}
+
+.stop-loss-container > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.stop-loss-container > div > div {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+.stop-loss-container > div > div h2 {
+	margin-right: 0.7rem;
+	font-size: 1rem;
+}
+
+.stop-loss-container .output {
+	margin-top: 0.2rem;
+	width: 80%;
+	height: 30px;
+	font-size: 1.1rem;
+}
+
+.s2-table-two h3 {
+	color: white;
+	font-size: 1rem;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+	margin-top: 1rem;
+}
+
+.s2-table-two > div:last-child > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.s2-table-two > div:last-child .output > div:first-child {
+	width: 0;
+}
+
+.s2-table-two > div:last-child .output {
+	font-size: 1rem;
+}
